@@ -1,0 +1,35 @@
+.site-header nav a[aria-current="page"]{color:var(--blue)}
+.about-section{padding:110px 0 115px;background:#fff}
+.about-heading{margin-bottom:37px}.about-heading h1{margin:0 0 13px;font-size:clamp(2.15rem,3.7vw,3.25rem);line-height:1.28;letter-spacing:-.067em}.about-heading>p:last-child{max-width:920px;margin:0;color:var(--slate);font-size:1rem;line-height:1.8;word-break:keep-all}
+.ci-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:20px}
+.ci-logo{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:15px;min-height:420px;padding:40px;border:1px solid var(--line);border-radius:8px;background:#f5f9fc}
+.ci-logo img{display:block;width:min(75%,380px);height:auto}
+.ci-meaning{display:grid;gap:16px}
+.ci-card{min-height:200px;padding:31px 34px;border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:7px;background:#fff}
+.ci-lake{border-left-color:var(--blue)}
+.ci-card>span{color:var(--blue);font-family:Jost,"Noto Sans KR",sans-serif;font-size:.76rem;font-weight:700;letter-spacing:.14em}
+.ci-card h3{margin:14px 0 10px;color:var(--navy);font-size:1.5rem}
+.ci-card p{max-width:580px;margin:0;color:var(--slate);font-size:.96rem;line-height:1.8;word-break:keep-all}
+.ci-statement{margin:22px 0 0;padding:32px 38px;border-radius:7px;background:var(--navy);color:#fff;font-size:clamp(1.15rem,2vw,1.6rem);font-weight:750;line-height:1.65;letter-spacing:-.05em;text-align:center;word-break:keep-all}
+.greeting-section{padding:112px 0 120px;background:#edf4f9}
+.greeting-layout{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:70px;align-items:start}
+.greeting-photo{overflow:hidden;border-radius:8px;background:var(--navy);box-shadow:0 24px 55px rgba(27,58,92,.12)}
+.greeting-photo img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;object-position:center top}
+.greeting-photo>div{display:grid;gap:5px;padding:22px 27px;color:#fff}
+.greeting-photo span{color:var(--gold);font-family:Jost,"Noto Sans KR",sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.14em}
+.greeting-photo strong{font-size:1.24rem}.greeting-photo small{color:#cedce8;font-size:.83rem}
+.greeting-copy h2{margin-bottom:27px}
+.greeting-copy p{margin:0 0 20px;color:#485d72;font-size:.98rem;line-height:1.9;word-break:keep-all}
+.greeting-copy .greeting-opening{color:var(--navy);font-size:1.12rem;font-weight:700;line-height:1.7}
+.greeting-copy blockquote{margin:28px 0;padding:24px 27px;border-left:4px solid var(--gold);background:#fff;color:var(--navy);font-size:clamp(1.12rem,1.8vw,1.42rem);font-weight:800;line-height:1.6;letter-spacing:-.04em;word-break:keep-all}
+.ceo-signature{display:flex;align-items:baseline;gap:12px;margin:26px 0 26px;color:var(--navy)}
+.ceo-signature span{font-size:.88rem}.ceo-signature strong{font-size:1.4rem}
+.greeting-copy .ceo-profile{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;margin:0;padding-top:20px;border-top:1px solid #cddae4;color:var(--navy);font-size:.88rem}
+.ceo-profile span{color:var(--blue);font-weight:800}.ceo-profile strong{font-weight:700}
+@media(max-width:900px){.greeting-layout{gap:35px}}
+@media(max-width:760px){.about-section,.greeting-section{padding:75px 0}.ci-grid,.greeting-layout{grid-template-columns:1fr}.ci-logo{min-height:300px}.greeting-photo{max-width:470px}.ci-statement{padding:28px 23px}}
+@media(max-width:520px){.ci-card{min-height:0;padding:26px}.greeting-copy blockquote{padding:20px}}
+.ci-logo-window.logo-crop{width:min(85%,380px)}
+.greeting-layout{grid-template-columns:minmax(0,230px) minmax(0,1fr)}
+.greeting-photo{max-width:230px}
+@media(max-width:760px){.greeting-layout{grid-template-columns:1fr}.greeting-photo{max-width:230px}}

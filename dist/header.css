@@ -1,0 +1,29 @@
+/* 모든 페이지 공통 상단 메뉴 (마지막에 불러와 다른 스타일보다 우선) */
+body{font-family:"Noto Sans KR",sans-serif;font-size:16px;line-height:normal;background:#fff;color:#1b3a5c}
+.skip-link{position:absolute;z-index:60;top:-60px;left:20px;padding:10px 14px;background:#1b3a5c;color:#fff}
+.skip-link:focus{top:12px}
+.review-bar{background:#102b49;color:#d7e2ee;font-size:.82rem}
+.review-bar .container{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 20px;min-height:42px;padding-block:6px}
+.review-bar strong{color:#fcb318}
+.site-header{position:relative;z-index:30;background:#fff;border-bottom:1px solid #dce3eb}
+.site-header .header-inner{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:30px;padding-block:0}
+.site-header .brand.logo-crop{position:relative;display:block;width:108px;flex:0 0 auto;aspect-ratio:506/324;overflow:hidden;background:#fff;line-height:0;margin:0}
+.site-header .brand.logo-crop img{position:absolute!important;top:-83.95%;left:-116.8%;display:block!important;width:336.2%!important;height:auto!important;max-width:none!important}
+.site-header nav{display:block;gap:0}
+.site-header .main-nav{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;gap:6px 8px;margin:0;padding:0;list-style:none}
+.site-header .main-nav>li{position:relative;margin:0}
+.site-header .main-nav>li>a{display:block;padding:10px 14px;border-radius:4px;color:#1b3a5c;font-size:.95rem;font-weight:800;text-decoration:none;white-space:nowrap;background:transparent}
+.site-header .main-nav>li>a:hover,.site-header .main-nav>li:focus-within>a{color:#0062be;background:#f6f7f9}
+.site-header .main-nav a[aria-current="page"]{color:#0062be}
+.site-header .main-nav .sub{position:absolute;z-index:40;top:100%;left:0;display:none;min-width:170px;margin:0;padding:8px;list-style:none;border:1px solid #dce3eb;border-radius:6px;background:#fff;box-shadow:0 12px 28px rgba(16,43,73,.12)}
+.site-header .main-nav>li:hover .sub,.site-header .main-nav>li:focus-within .sub{display:block}
+.site-header .main-nav .sub li{margin:0}
+.site-header .main-nav .sub a{display:block;padding:9px 12px;border-radius:4px;color:#1b3a5c;font-size:.9rem;font-weight:600;text-decoration:none;white-space:nowrap}
+.site-header .main-nav .sub a:hover,.site-header .main-nav .sub a:focus-visible{background:#f6f7f9;color:#0062be}
+.site-header .main-nav .sub a[aria-current="page"]{color:#0062be;font-weight:800}
+@media(max-width:760px){
+  .site-header .header-inner{display:block;min-height:0;padding-block:12px 16px}
+  .site-header .brand.logo-crop{width:96px;margin-bottom:8px}
+  .site-header .main-nav{justify-content:flex-start;gap:4px 2px;margin-left:-8px}
+  .site-header .main-nav>li>a{padding:8px;font-size:.86rem;letter-spacing:-.02em}
+}
