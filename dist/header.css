@@ -27,3 +27,6 @@ body{font-family:"Noto Sans KR",sans-serif;font-size:16px;line-height:normal;bac
   .site-header .main-nav{justify-content:flex-start;gap:4px 2px;margin-left:-8px}
   .site-header .main-nav>li>a{padding:8px;font-size:.86rem;letter-spacing:-.02em}
 }
+
+/* 좁은 화면에서도 키보드 포커스와 터치로 하위 메뉴에 접근 */
+@media(max-width:760px){.site-header .main-nav>li:hover .sub,.site-header .main-nav>li:focus-within .sub{display:block!important}}

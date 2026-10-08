@@ -1,0 +1,8 @@
+.company-nav{border-bottom:1px solid #dce3eb;background:#f6f7f9}
+.company-nav .container{display:flex;flex-wrap:wrap;gap:4px 8px;padding-block:14px}
+.company-nav a{display:block;padding:10px 16px;border-radius:4px;color:#1b3a5c;text-decoration:none;font-weight:700;font-size:.94rem}
+.company-nav a:hover,.company-nav a:focus-visible{background:#e8eef5;color:#0062be}
+.company-nav a[aria-current="page"]{background:#1b3a5c;color:#fff}
+.company-nav a:focus-visible{outline:3px solid #fcb318;outline-offset:2px}
+.about-svc-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:760px){.company-nav a{padding:9px 10px;font-size:.85rem}.about-svc-grid{grid-template-columns:minmax(0,1fr)}}
