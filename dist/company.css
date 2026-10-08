@@ -6,3 +6,6 @@
 .company-nav a:focus-visible{outline:3px solid #fcb318;outline-offset:2px}
 .about-svc-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:760px){.company-nav a{padding:9px 10px;font-size:.85rem}.about-svc-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* 투명 PNG의 여백을 고려해 기존 로고 표시 크기를 유지 */
+.ci-logo .ci-logo-img{width:min(100%,340px);max-width:100%;height:auto;justify-self:center;margin:0}
